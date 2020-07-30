@@ -1,0 +1,39 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: stretch;
+  margin-bottom: 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 5px 20px;
+  width: 100px;
+  height: 150px;
+  border-radius: 5px;
+  background: white;
+  transition: all 0.5s;
+}
+
+.cardBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding: 30px;
+  font-weight: 600;
+  max-width: 60%;
+  user-select: none;
+}
+
+.card:hover {
+  transition: all 0.5s;
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+

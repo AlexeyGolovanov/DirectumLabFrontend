@@ -1,0 +1,18 @@
+include ../mixins/user.pug
+-
+	const userList = [
+		{name: "Админимтратор", status: true, vote: false},
+		{name: "Пользователь 1", status: false, vote: true},
+		{name: "Пользователь 2", status: false, vote: false},
+		{name: "Пользователь 3", status: false, vote: false},
+		{name: "Пользователь 4", status: false, vote: false},
+		{name: "Пользователь 5", status: false, vote: false},
+		{name: "Пользователь 6", status: false, vote: false},
+		{name: "Пользователь 7", status: false, vote: false},
+		{name: "Пользователь 8", status: false, vote: false},
+		{name: "Пользователь c чрезмерно длинным, не входяшимся в одну строку именем", status: false, vote: false}
+	]
+.userWrap
+	ul.users
+		each user in userList
+			+User(user.name, user.vote , user.status)

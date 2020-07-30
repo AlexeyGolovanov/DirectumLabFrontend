@@ -1,0 +1,9 @@
+mixin User(name,vote,status)
+	li.user
+		img.userPic(src="./img/user.png")
+		if vote
+			span.userName.voted !{name}
+		else
+			span.userName.waiting !{name}
+		if status
+			span 🔑

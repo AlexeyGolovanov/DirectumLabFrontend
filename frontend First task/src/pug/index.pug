@@ -1,0 +1,19 @@
+doctype html
+html
+	head
+		title "Frontend Task 1"
+		meta(charset="utf-8")
+		meta(name = "keywords" content="pug, sass, gulp")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		link(
+			href="./css/style.css"
+			rel="stylesheet"
+		)
+	body
+		include includes/header.pug
+		.story
+			h2 Story: "Выбрать карту"
+		.main_wrapper
+			include includes/main.pug
+			include includes/sidebar/sidebar.pug
+

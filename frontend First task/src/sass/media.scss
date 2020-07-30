@@ -1,0 +1,47 @@
+@media screen and (max-width: 980px) {
+  .main_wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar {
+    min-width: 70%;
+    max-width: 70%;
+  }
+
+  .main {
+    padding: 0;
+  }
+
+  .history_wrapper {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  header {
+    padding: 0 20px;
+  }
+
+  .main_wrapper {
+    padding: 10px 0;
+  }
+
+  .userSelf .userPic {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    width: 40px;
+    height: 80px;
+  }
+
+  .roundHistory_header {
+    font-size: 14px;
+  }
+}

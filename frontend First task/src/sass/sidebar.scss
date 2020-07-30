@@ -1,0 +1,99 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.userPanel {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 0 25px 5px rgba(19, 33, 44, 0.32);
+
+  .header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    background: blue;
+  }
+
+  .timer {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+  }
+
+  .userWrap {
+    padding: 10px;
+  }
+
+  .users {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-height: 355px;
+    overflow-y: auto;
+  }
+
+  .users::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 10px;
+    background-color: #dedede;
+  }
+
+  .users::-webkit-scrollbar-thumb {
+    width: 2px;
+    border-radius: 10px;
+    background-color: #a8a7a7;
+  }
+
+  .user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 5px;
+    text-overflow: ellipsis;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid rgb(0, 0, 0);
+    }
+
+    .userPic {
+      width: 25px;
+      border-radius: 50px;
+      flex: 0 0 auto;
+    }
+  }
+}
+
+.userName {
+  margin-left: 10px;
+  text-overflow: ellipsis;
+  margin-right: 20px;
+  line-height: 1.1;
+  white-space: nowrap; 
+  overflow: hidden;
+  padding: 5px; 
+  text-overflow: ellipsis;
+}
+
+.control {
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px 20px 10px;
+  border-radius: 10px;
+}
+
+
+.waiting {
+  color: red;
+}
+
+.voted {
+ color: green;
+}
