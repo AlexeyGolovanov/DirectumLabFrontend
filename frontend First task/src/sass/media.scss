@@ -6,12 +6,14 @@
   }
 
   .sidebar {
-    min-width: 70%;
-    max-width: 70%;
+    min-width: 100%;
+    max-width: 100%;
   }
 
   .main {
     padding: 0;
+    min-width: 100%;
+    max-width: 100%;
   }
 
   .history_wrapper {
