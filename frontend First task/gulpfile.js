@@ -62,5 +62,22 @@ const clean = () => {
 	return del(['dist/*']);
 }
 
+gulp.task('js', () => browserify('./src/app.js', { debug: true })
+    .transform(babelify, { 
+        presets: ['@babel/preset-env'], 
+        plugins: ['@babel/transform-runtime'], 
+        sourceMaps: true
+     })
+    .bundle()
+    .pipe(source('build.js'))
+    .pipe(buffer())
+    .pipe(rename('index.min.js'))
+    .pipe(sourcemaps.init({loadMaps: true}))
+    .pipe(uglify())
+    .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest('./build/'))
+    .pipe(browserSync.reload({ stream: true }))
+);
+
 gulp.task('build', gulp.series(clean, gulp.parallel(pugs, styles, images)));
 gulp.task('watch', gulp.series('build', watch));
