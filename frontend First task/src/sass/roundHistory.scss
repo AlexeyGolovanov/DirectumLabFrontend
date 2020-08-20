@@ -27,6 +27,7 @@
     span {
       display: flex;
       align-items: center;
+      padding: 15px;
 
       &:first-child {
         padding-left: 15px;
@@ -41,21 +42,24 @@
   }
 
   .tabs span:hover{
-      background-color: rgb(116, 107, 107);
+      background-color: #5ec9ff;
   }
 
   .storiesButton {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 15px;
 
     span {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+
       &:last-child {
         margin-left: 10px;
       }
       &:hover{
-        background-color: rgb(116, 107, 107);
+        background-color: #5ec9ff;
       }
     }
   }
