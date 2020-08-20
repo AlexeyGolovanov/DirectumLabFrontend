@@ -18,6 +18,9 @@
     min-width: 100%;
     max-width: 100%;
   }
+  .roundHistory_body .tasks {
+    max-height: 250px;
+  }
 }
 
 @media screen and (max-width: 550px) {
