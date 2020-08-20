@@ -2,8 +2,8 @@ mixin User(name,vote,status)
 	li.user
 		img.userPic(src="./img/user.png")
 		if vote
-			span.userName.voted !{name}
+			span.userName ✔ !{name}
 		else
-			span.userName.waiting !{name}
+			span.userName ⌛ !{name}
 		if status
 			span 🔑
